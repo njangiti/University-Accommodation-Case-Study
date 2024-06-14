@@ -1,0 +1,55 @@
+a) stfName                           telephone
+"Vickie Birtley"	"7895412589"
+"Vickie Birtley"	"7895412589"
+"Carlo Kidson"	"8523697412"
+
+b) "leaseID","leaseDuration","student_ID","roomNum","entryDate","exitDate","hallid","studentName"
+"ls124",2,"15-3736688","rm123","2022-05-01","2022-08-20","hal1","Riane Kermit"
+"ls123",3,"33-1489894","rm123","2021-06-01","2021-06-05","hal1","Vickie Birtley"
+"ls125",2,"33-1489894","rm234","2022-05-01","2022-08-20","hal2","Vickie Birtley"
+
+c) 
+"leaseID","leaseDuration","student_ID","roomNum","entryDate","exitDate","apartmtid","hallid"
+"ls124",2,"15-3736688","rm123","2022-05-01","2022-08-20",NULL,"hal1"
+"ls125",2,"33-1489894","rm234","2022-05-01","2022-08-20",NULL,"hal2"
+
+
+d)
+"studentBannerNumber","studentName","sum"
+"15-3736688","Riane Kermit",700
+"33-1489894","Vickie Birtley",2500
+
+e)
+"studentBannerNumber","studentName"
+"78-8713028","Karyl Ballentime"
+"89-9134291","Guillaume McLinden"
+"15-3736688","Riane Kermit"
+"33-1489894","Vickie Birtley"
+"88-6169663","Carlo Kidson"
+
+ f)
+"staff_id","hall_id","inspection_date","condition","comments","inspectionID"
+"33-1489894","hal1","2022-01-18","Unsatisfactory","Poor","ins234"
+"33-1489894","hal1","2022-01-18","Unsatisfactory","Poor","ins294"
+"88-6169663","hal3","2022-01-15","Unsatisfactory","Good","ins2094"
+
+
+g)
+"fullName","telephone"
+"Katharina Rollins","3563609809"
+
+
+h)
+"studentName","address","nationality","phoneNumber","category","status","advisor","studentBannerNumber","gender","email","birthDate"
+"Vickie Birtley","358 Kipling Circle","Portugal","241 572 5984","postgraduate","Waiting","15-3736688","33-1489894","F","vbirtley0@canalblog.com","1998-04-25"
+
+i)
+"category","count"
+"postgraduate",1
+"undergraduate",4
+
+j)
+hallName","numberOfRooms"
+"hall1",34
+"hall2",56
+"hall3",76

@@ -1,0 +1,105 @@
+advisor Table
+
+advisorID	fullName	department	position	telephone	email	roomNumber
+17-5964743	Ginger Baroc	Maths	Professor	4695171199	gbaroc0@bbb.org	rm871
+17-5234811	Constantin Tzarkov	Computing	Professor	9247087574	ctzarkov1@qq.com	rm878
+33-1489894	Kiri Smalman	Engineering	Professor	7863204112	ksmalman2@blinklist.com	rm879
+89-9134291	Law Bride	Computing	Professor	8248618050	lbride3@geocities.com	rm898
+78-8713028	Barnie Karet	Engineering	Professor	5321515897	bkaret4@weebly.com	rm868
+15-3736688	Katharina Rollins	Computing	Administrator	3563609809	krollins5@lycos.com	rm878
+88-6169663	Adrien Penhearow	Maths	Administrator	2313970913	apenhearow6@cornell.edu	rm808
+82-3919283	Robinson Bridge	Maths	Professor	6271420664	rbridge7@cam.ac.uk	rm875
+25-4480035	Leland Thominga	Business	Administrator	8729726732	lthominga8@booking.com	rm873
+35-4412799	Dorisa Donet	Computing	Dean	6031083344	ddonet9@tripadvisor.com	rm876
+
+Courses Table
+
+courseNumber	courseTitle	academicYear	roomNumber	department
+cs123	Database	2021/2022	rm123	Computing
+cs234	data Structure	2020/2021	rm234	Maths
+cs235	Algorthms	2021/2022	rm253	Computing
+math345	Linear Algebra	2021/2022	rm345	Maths
+
+
+Flat_rooms Table
+
+roomNumber	placeNumber	hall_id	rent_rate
+rm123	pl123	hal3	675
+rm453	pl234	hal2	500
+rm354	pl678	hal1	1000
+
+Halls Table
+
+hallID	hallName	numberOfRooms	manager_id
+hal2	hall2	56	33-1489894
+hal1	hall1	34	33-1489894
+hal3	hall3	76	88-6169663
+
+Inspection Table
+
+staff_id	hall_id	inspection_date	condition	comments	inspectionID
+33-1489894	hal1	2022-01-18	Unsatisfactory	Poor	ins234
+33-1489894	hal1	2022-01-18	Unsatisfactory	Poor	ins294
+78-8713028	hal2	2022-01-19	Satisfactory	Poor	ins2874
+88-6169663	hal3	2022-01-15	Unsatisfactory	Good	ins2094
+
+Instructors_Course Table
+
+instructor_id	course_id
+14-1417758	math345
+20-5822931	cs235
+24-6303984	cs234
+33-9939701	cs123
+
+
+Instructors Table
+instructorID	instructorName	telephone	email
+66-4325483	pbrooker0@amazon.com	77-8434692	719 219 1235
+75-8679583	dantrim1@pcworld.com	21-6096492	162 741 9036
+89-3925955	rhillborne2@japanpost.jp	76-9975964	576 321 9382
+49-0583171	cbrewer3@weather.com	27-0215185	514 516 2961
+33-9939701	bkepe4@vimeo.com	34-5909412	457 525 5069
+24-6303984	dmussetti5@vkontakte.ru	67-0504887	178 205 8699
+14-1417758	dbastin6@army.mil	90-8159272	538 900 5708
+62-0393589	gcloake7@creativecommons.org	64-7107527	959 122 8222
+20-5822931	mwhitford8@istockphoto.com	01-4472516	227 960 2387
+52-9894607	toxe9@chron.com	71-9249652	867 343 9987
+
+Invoice Table
+
+invoiceID	leaseNumber	semester	paymentDue	studentID	payDate
+123	ls123	2021su	1000	33-1489894	2021-06-05
+234	ls124	2022su	1500	33-1489894	2022-08-15
+235	ls125	2022su	700	15-3736688	2022-08-10
+
+Lease Table
+
+leaseID	leaseDuration	student_ID	roomNum	entryDate	exitDate	hallid
+ls123	3	33-1489894	rm123	2021-06-01	2021-06-05	hal1
+ls124	2	15-3736688	rm123	2022-05-01	2022-08-20	hal1
+ls125	2	33-1489894	rm234	2022-05-01	2022-08-20	hal2
+
+StaffTable
+stfNumber	stfEmail	stfName	stfAddress	stfDOB	stfGender	stfPosition	stfLocation	telephone
+15-3736688	rkermit3@google.co.uk	Riane Kermit	1597 Toban Court	1997-09-21	M	Administrative	Hall of residence	8965236987
+33-1489894	vbirtley0@canalblog.com	Vickie Birtley	358 Kipling Circle	1998-04-25	F	Administrative	Hall of residence	7895412589
+78-8713028	kballentime2@google.com.br	Karyl Ballentime	35 Pierstorff Point	1999-08-04	M	Administrative	Hall of residence	0236589741
+88-6169663	ckidson4@weebly.com	Carlo Kidson	88890 Havey Terrace	1996-06-10	M	Administrative	Hall of residence	8523697412
+89-9134291	gmclinden1@t-online.de	Guillaume McLinden	87 Loomis Trail	1999-03-30	M	Cleaner	Hall of residence	6587495632
+
+student Table 
+
+studentName	address	nationality	phoneNumber	category	status	advisor	studentBannerNumber	gender	email	birthDate
+Vickie Birtley	358 Kipling Circle	Portugal	241 572 5984	postgraduate	Waiting	15-3736688	33-1489894	F	vbirtley0@canalblog.com	1998-04-25
+Guillaume McLinden	87 Loomis Trail	Indonesia	392 141 7336	undergraduate	Admitted	17-5234811	89-9134291	M	gmclinden1@t-online.de	1999-03-30
+Karyl Ballentime	35 Pierstorff Point	Portugal	992 713 0143	undergraduate	Admitted	17-5964743	78-8713028	M	kballentime2@google.com.br	1999-08-04
+Riane Kermit	1597 Toban Court	Indonesia	347 271 5092	undergraduate	Admitted	25-4480035	15-3736688	M	rkermit3@google.co.uk	1997-09-21
+Carlo Kidson	88890 Havey Terrace	Saint Kitts	854 443 0592	undergraduate	Admitted	33-1489894	88-6169663	M	ckidson4@weebly.com	1996-06-10
+
+
+Student_Courses Table
+
+student_id	courses_id
+15-3736688	cs123
+33-1489894	cs234
+78-8713028	cs235
