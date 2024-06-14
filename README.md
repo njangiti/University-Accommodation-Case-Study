@@ -20,7 +20,7 @@ The University Accommodation database system is designed to manage various aspec
 
 ### ER Diagram
 
-![ER Diagram](path/to/er_diagram.png)
+![ER Diagram](https://github.com/njangiti/University-Accommodation-Case-Study/blob/main/Untitled.png)
 
 ### Database Schema
 
